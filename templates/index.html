@@ -1,0 +1,75 @@
+ {% extends 'base.html' %} 
+
+
+{% block content %}
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div>
+                   total cost = {{  result  }}
+                </div>
+            
+        
+        <form action="" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+             
+              <input type="number"
+                class="form-control" name="feeds_cost" id="" aria-describedby="helpId" placeholder="">
+              <small id="helpId" class="form-text text-muted">Current price of 25kg bag of feed</small>
+            </div>
+            <div class="form-group">
+                
+                <input type="number"
+                  class="form-control" name="no_of_bird" id="" aria-describedby="helpId" placeholder="">
+                <small id="helpId" class="form-text text-muted">number of birds you wishe to rear</small>
+              </div>
+              <div class="form-group">
+               
+                <input type="number"
+                  class="form-control" name="small_equipment" id="" aria-describedby="helpId" placeholder="">
+                <small id="helpId" class="form-text text-muted">A mount you might spend on small farm equipment</small>
+              </div>
+              <div class="form-group">
+               
+                <input type="number"
+                  class="form-control" name="paid_labor" id="" aria-describedby="helpId" placeholder="">
+                <small id="helpId" class="form-text text-muted">cost of paid labor</small>
+              </div>
+              <div class="form-group">
+               
+                <input type="number"
+                  class="form-control" name="transportation" id="" aria-describedby="helpId" placeholder="">
+                <small id="helpId" class="form-text text-muted">transportation cost</small>
+              </div>
+              <div class="form-group">
+                
+                <input type="number"
+                  class="form-control" name="inKind_expenses" id="" aria-describedby="helpId" placeholder="">
+                <small id="helpId" class="form-text text-muted">in-Kind expenses cost</small>
+              </div>
+  
+
+        <button type="submit"><p class="lead">
+            <span class="btn btn-primary btn-lg" role="button">Calcuulate</span>
+        </p></button>
+
+        </form>
+
+
+
+        
+    </div>
+
+</div>
+<div class="col-md-4"></div>
+</div>
+
+
+
+    
+{% endblock content %}
+    
