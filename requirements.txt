@@ -1,0 +1,11 @@
+asgiref==3.2.10
+Django==3.0.8
+django-solo==1.1.0
+gunicorn==20.0.4
+libtaxii==1.1.105
+lxml==4.5.2
+python-dateutil==2.8.1
+pytz==2020.1
+six==1.15.0
+sqlparse==0.3.1
+taxii-services==0.4
