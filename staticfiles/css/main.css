@@ -11,6 +11,7 @@ body::after {
     background: url(../img/pic2.jpg);
     background-repeat: no-repeat;
     position: absolute;
+    background-attachment: fixed;
     background-position: center;
    background-size: cover;
   
