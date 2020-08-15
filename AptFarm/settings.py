@@ -25,7 +25,7 @@ SECRET_KEY = '-=v=#o7*5+nkefs38fo8h8c2patu^1egys9pxm8f)7it#_x07y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['aptfarm.herokuapp.com']
 
 
 # Application definition
