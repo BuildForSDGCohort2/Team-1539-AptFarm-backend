@@ -23,7 +23,7 @@ SECRET_KEY = '-=v=#o7*5+nkefs38fo8h8c2patu^1egys9pxm8f)7it#_x07y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['aptfarm.herokuapp.com','127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['aptfarm.herokuapp.com','127.0.0.1', 'localhost',]
 
 
 # Application definition
@@ -124,7 +124,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
