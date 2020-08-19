@@ -21,7 +21,8 @@ def index(request):
         b = 25
         c = i/ b
         f = (feeds_cost * c) * no_of_birds
-        total = f + a
+        r = f + a
+        total = round(r,2)
         
 
 
@@ -31,6 +32,16 @@ def index(request):
         return render(request, 'index.html')
 
 
+
+def evaluate(request):
+    return render(request, 'evaluate.html')
+
+
+def project(request):
+    return render(request, 'project.html')
+
+def reminder(request):
+    return render(request, 'reminder.html')
 
     
 

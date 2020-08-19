@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'snail',
     'requirement',
     'chickens',
-    'farm'
+    'farm',
+    'procedures'
 ]
 
 MIDDLEWARE = [

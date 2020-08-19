@@ -1,5 +1,14 @@
 from django.db import models
-from chickens.models import Chicken
-# Create your models here.
+from procedures.models import *
+
+
 class Layers(models.Model):
-    chicken = models.ForeignKey(Chicken, on_delete=models.CASCADE)
+    specie = models.CharField(max_length=50,null=True)
+    procedures =models.ForeignKey(Procedures,on_delete=models.CASCADE, null=True)
+    drugs =models.ManyToManyField(Drugs,null=True)
+    vaccine = models.ManyToManyField(Vaccine,null=True)
+    feed = models.ManyToManyField(Feed,null=True)
+
+    
+    def __str__(self):
+        return self.specie
