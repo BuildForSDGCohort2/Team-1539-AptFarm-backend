@@ -23,7 +23,7 @@ SECRET_KEY = '-=v=#o7*5+nkefs38fo8h8c2patu^1egys9pxm8f)7it#_x07y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['aptfarm.herokuapp.com','127.0.0.1', 'localhost',]
+ALLOWED_HOSTS = ['aptfarm.herokuapp.com']
 
 
 # Application definition
@@ -113,9 +113,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'aptfarm', 
-        'USER': 'postgres', 
-        'PASSWORD': '12345',
-        'HOST': '127.0.0.1', 
+        'USER': 'dvbkqhrulrhhfl', 
+        'PASSWORD': '544f20f16ef1eea69e0f2341cfc4da0422ddc6aa3e3ddbd98a200fb919bcc748',
+        'HOST': 'ec2-50-16-198-4.compute-1.amazonaws.com', 
         'PORT': '5432',
     }
 }
