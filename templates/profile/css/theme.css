@@ -1,0 +1,248 @@
+
+/*
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+*/
+iframe {
+	border: none;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px ;
+	-o-border-radius: 4px;
+	-ms-border-radius: 4px;
+}
+.main{
+	margin: 4% 0;
+}
+/* chart */
+.chart {
+	padding: 34px 129px;
+	border-radius: 0px 0px 10px 10px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	text-align: center;
+	-moz-border-radius: 0px 0px 10px 10px;
+	-o-border-radius: 0px 0px 10px 10px;
+	background: #1FBBA6;
+	border-radius: 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	-o-border-radius: 4px 4px 0 0;
+	-ms-border-radius: 4px 4px 0 0;
+}
+.grid1_of_3 {
+	margin: 5% 0 0;
+}
+/*graph*/
+.graph{
+	background:#fff;
+	padding: 30px 30px 8px;
+}
+div span1 {
+	display: block;
+	float: left;
+  	cursor: default;
+}
+::-moz-selection, ::selection {
+	background: transparent;
+}
+.empty {
+	width: 30px;
+	height: 60px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	background: #EAEDF1;
+	position: relative;
+	float: left;
+	margin: 5px;
+}
+.fill {
+	width: 30px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	position: absolute;
+	bottom: 0;
+}
+.uno {
+	height: 50%;
+	background: #1FBBA6;	
+}
+.dos {
+	height: 30%;
+	background: #1FBBA6;	
+}
+.tres {
+	height: 45%;
+	background: #1FBBA6;	
+}
+.quatro {
+	height: 64%;
+	background: #1FBBA6;	
+}
+div.graph h6 {
+	font-family: 'Open Sans', 'sans-serif';
+	font-size: 1em;
+	margin: 0 0 26px;
+	color:#90A3BB;
+}
+div.chart h4 {
+	font-family: 'Open Sans', 'sans-serif';
+	color: #fff;
+	padding: 0 0 5% 0;
+	margin: 0;
+	text-align: center;
+}
+div.tables.pull-right label {
+	font-size: 2.5em;
+	margin-top: 1em;
+	color: #1FBBA6;
+}
+.bottom{
+	border-top:1px solid #eee;
+}
+.left label {
+	font-family: 'Open Sans', 'sans-serif';
+	font-size: 2.5em;
+	margin-top: 0.3em;
+	color:#1FBBA6;
+}
+.right label {
+	font-family: 'Open Sans', 'sans-serif';
+	font-size: 2.5em;
+	margin-top: 0.3em;
+	color:#1FBBA6;
+}
+
+.pie-wrapper {
+  display: inline-block;
+  height: 200px;
+  margin: 0% 0% 0%;
+  position: relative;
+  width: 200px;
+}
+.pie-wrapper .pie {
+  height: 200px;
+  position: absolute;
+  width: 200px;
+}
+.pie-wrapper .pie .half-circle {
+  border: 35px solid #3498db;
+  border-radius: 50%;
+  clip: rect(0, 100px, 200px, 0);
+  height: 200px;
+  position: absolute;
+  width: 200px;
+}
+.pie-wrapper .label {
+  font-family: 'Open Sans', sans-serif;
+  background: #34495e;
+  border-radius: 50%;
+  color: #ecf0f1;
+  cursor: default;
+  display: block;
+  font-size: 2.2em;
+  height: 130px;
+  left: 17.5%;
+  line-height: 2.3em;
+  position: absolute;
+  text-align: center;
+  top: 17.5%;
+  width: 130px;
+  font-weight: 400;
+  border: 6px solid #fff;
+}
+.pie-wrapper .label .smaller {
+  color: #bdc3c7;
+  font-size: .45em;
+  padding-bottom: 20px;
+  vertical-align: super;
+}
+.pie-wrapper.style-2 .shadow {
+  border: 20px solid #fff;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+.pie-wrapper.style-2 .label {
+	color: #fff;
+	background: #323A45;
+	padding: 18px;
+}
+.pie-wrapper.progress-75 .pie {
+ 
+}
+.pie-wrapper.progress-75 .pie .right-side {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.pie-wrapper.progress-75 .pie .half-circle {
+  border-color:#BFBFBF;
+}
+.pie-wrapper.progress-75 .pie .left-side {
+  -webkit-transform: rotate(315deg);
+  -moz-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  -o-transform: rotate(315deg);
+  transform: rotate(315deg);
+}
+div.pie-wrapper.progress-75.style-2 .label i {
+	font-size: 0.6em;
+	color: #999;
+}
+.portfolio-weight-bottom ul li a:nth-child(2) {
+	border-right: 1px solid #E2E2E2;
+}
+.portfolio-weight-bottom ul li a.last-child {
+	border-right:none;
+}
+div.portfolio-weight-bottom ul {
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #EEEEEE;
+}
+
+
+@media only screen and (max-width: 1024px) {
+	
+   .chart {
+		padding: 34px 88px;
+	}
+	
+}
+@media only screen and (max-width: 768px) {
+		
+    .pie-wrapper {
+		margin: 7.5% 0% 0%;
+	}
+	
+}
+@media only screen and (max-width: 640px) {
+	
+	.chart {
+		padding: 34px 60px 34px 100px;
+	}
+	.pie-wrapper {
+		margin: 9.5% 0% 0%;
+	}
+	
+}
+@media only screen and (max-width: 480px) {
+	
+	.pie-wrapper {
+		margin: 15.5% 0% 0%;
+	}
+	
+}
+@media only screen and (max-width: 320px) {
+	
+	.chart {
+		padding: 34px 60px 34px 39px;
+	}
+	
+}

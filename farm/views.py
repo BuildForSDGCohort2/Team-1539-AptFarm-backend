@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.forms import Form
+from django.contrib.auth.models import User
 # Create your views here.
 
 
@@ -43,6 +44,20 @@ def project(request):
 def reminder(request):
     return render(request, 'reminder.html')
 
+def accounts(request):
+    return render(request, 'profile/index.html')
+
+
+def profile(request):
+
+    # If a user is logged in, redirect them to a page informing them of such
+    return render(request, 'profile/index.html')
+
+  
+
     
+
+
+
 
 

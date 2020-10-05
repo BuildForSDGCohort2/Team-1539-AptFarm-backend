@@ -1,0 +1,519 @@
+{% extends "account/base.html" %}
+{% load static %}
+
+
+{% if user.is_authenticated %}
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>AptFarm Flat bootstrap Responsive  Website Template | Home :: w3layouts</title>
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<!-- Custom Theme files -->
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="AptFarm Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--Google Fonts-->
+<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+<!-- //end-smoth-scrolling -->
+<!--Calender -->
+  <link rel="stylesheet" href="{% static 'css/clndr.css" type="text/css" />
+  <script src="{% static 'js/underscore-min.js' %}"></script>
+  <script src= "{% static 'js/moment-2.2.1.js' %}"></script>
+  <script src="{% static 'js/clndr.js' %}"></script>
+  <script src="{% static 'js/site.js' %}"></script>
+ <!--chart -->
+		<link href="{% static 'css/theme.css' %}" rel='stylesheet' type='text/css' />
+		<script src="{% static 'js/Chart.js' %}"></script>
+<!--close script-->
+<script>$(document).ready(function(c) {
+	$('.glyphicon-remove').on('click', function(c){
+		$('.flat').fadeOut('slow', function(c){
+	  		$('.flat').remove();
+		});
+	});	  
+});
+</script>
+<!--responsive-->
+ <script src="{% static 'js/responsiveslides.min.js' %}"></script>
+ <script>
+    $(function () {
+      $("#slider").responsiveSlides({
+      	auto: true,
+      	nav: true,
+      	speed: 500,
+        namespace: "callbacks",
+        pager: true,
+      });
+    });
+  </script>
+
+</head>
+<body>
+<!--header start here-->
+<div class="header">
+	<div class="logo">
+	<h3><a href="#">AptFarm</a></h3>
+	</div>
+	<!---->
+	<div class="header-main1">
+	 
+	   <div class=" header-right1">
+	   	     <div class="top-nav">
+				 <nav class="navbar navbar-default">
+    		<!-- Brand and toggle get grouped for better mobile display -->
+    			<div class="navbar-header">
+      				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        				<span class="sr-only">Toggle navigation</span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+      				</button>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      	<li><a href="#">Home</a></li>
+        <li class="active"><a href="#">About<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Blog</a></li>
+        
+         <li class="dropdown">
+          <a href="{% static 'careers.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="careers.html">Lorem ipsum</a></li>
+            <li><a href="careers.html">Lorem ipsum</a></li>
+            <li><a href="careers.html">Lorem ipsum</a></li>
+          </ul>
+        </li>
+<li><a href="#">Contact</a></li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default"></button>
+      </form>
+    </div><!-- /.navbar-collapse -->
+ 	<!-- /.container-fluid -->
+</nav>
+<!-- /.navbar-collapse -->
+	   	<!---->
+		</div>
+	  </div>
+	   <div class="clearfix"> </div>
+	 </div>
+	<!---->
+	<div class="header-main">
+	  <div class="col-md-5 header-left">
+		 <div class="head-buttons">
+
+		    <div class="clearfix"> </div>
+<!--header-left colum2 start here-->
+            <div class="head-colum2">
+            	<div class="col-md-6 weather">
+            		<div class="weather-top">
+            			<div class="weather-time">
+            				<h4>Wednesday</h4>
+            				<p>Partly Cloudy</p>
+            				<h1>13</h1>
+            			</div>
+            			<div class="weather-img">
+            				<img src="{% static 'images/cloud.png" alt="">
+            			</div>
+            		   <div class="clearfix"> </div>
+            		</div>
+            		<div class="weather-bottom">
+            			<div class="seasons">
+            				<div class="season-left">
+            					<h4>Thursday</h4>
+            				</div>
+            				<div class="temparatur">
+            					<span class="cloud-img"> </span>
+            					<h5>25 5</h5>
+            				</div>
+            			   <div class="clearfix"> </div>
+            			</div>
+            			<div class="seasons">
+            				<div class="season-left">
+            					<h4>Friday</h4>
+            				</div>
+            				<div class="temparatur">
+            					<span class="cloud-rain"> </span>
+            					<h5>25 5</h5>
+            				</div>
+            			   <div class="clearfix"> </div>
+            			</div>
+            			<div class="seasons">
+            				<div class="season-left">
+            					<h4>Saturday</h4>
+            				</div>
+            				<div class="temparatur">
+            					<span class="cloud-sun"> </span>
+            					<h5>25 5</h5>
+            				</div>
+            			   <div class="clearfix"> </div>
+            			</div>
+            			<a href="#">See Full Report ></a>
+            		</div>
+            	</div>
+            	<div class="col-md-6 calgaman">
+            		<div class=" content-cal1">
+						<!-- start calender  ---->
+								<div class="column_right_grid calender">
+			                      <div class="cal1"><div class="clndr"><div class="clndr-controls"><div class="clndr-control-button"><p class="clndr-previous-button">previous</p></div><div class="month">November 2013</div><div class="clndr-control-button rightalign"><p class="clndr-next-button">next</p></div></div><table class="clndr-table" border="0" cellspacing="0" cellpadding="0"><thead><tr class="header-days"><td class="header-day">S</td><td class="header-day">M</td><td class="header-day">T</td><td class="header-day">W</td><td class="header-day">T</td><td class="header-day">F</td><td class="header-day">S</td></tr></thead><tbody><tr><td class="day past adjacent-month last-month calendar-day-2013-10-27"><div class="day-contents">27</div></td><td class="day past adjacent-month last-month calendar-day-2013-10-28"><div class="day-contents">28</div></td><td class="day past adjacent-month last-month calendar-day-2013-10-29"><div class="day-contents">29</div></td><td class="day past adjacent-month last-month calendar-day-2013-10-30"><div class="day-contents">30</div></td><td class="day past adjacent-month last-month calendar-day-2013-10-31"><div class="day-contents">31</div></td><td class="day past calendar-day-2013-11-01"><div class="day-contents">1</div></td><td class="day past calendar-day-2013-11-02"><div class="day-contents">2</div></td></tr><tr><td class="day past calendar-day-2013-11-03"><div class="day-contents">3</div></td><td class="day past calendar-day-2013-11-04"><div class="day-contents">4</div></td><td class="day past calendar-day-2013-11-05"><div class="day-contents">5</div></td><td class="day past calendar-day-2013-11-06"><div class="day-contents">6</div></td><td class="day past calendar-day-2013-11-07"><div class="day-contents">7</div></td><td class="day past calendar-day-2013-11-08"><div class="day-contents">8</div></td><td class="day past calendar-day-2013-11-09"><div class="day-contents">9</div></td></tr><tr><td class="day past event calendar-day-2013-11-10"><div class="day-contents">10</div></td><td class="day past event calendar-day-2013-11-11"><div class="day-contents">11</div></td><td class="day past event calendar-day-2013-11-12"><div class="day-contents">12</div></td><td class="day past event calendar-day-2013-11-13"><div class="day-contents">13</div></td><td class="day past event calendar-day-2013-11-14"><div class="day-contents">14</div></td><td class="day past calendar-day-2013-11-15"><div class="day-contents">15</div></td><td class="day past calendar-day-2013-11-16"><div class="day-contents">16</div></td></tr><tr><td class="day past calendar-day-2013-11-17"><div class="day-contents">17</div></td><td class="day past calendar-day-2013-11-18"><div class="day-contents">18</div></td><td class="day past calendar-day-2013-11-19"><div class="day-contents">19</div></td><td class="day past calendar-day-2013-11-20"><div class="day-contents">20</div></td><td class="day past event calendar-day-2013-11-21"><div class="day-contents">21</div></td><td class="day past event calendar-day-2013-11-22"><div class="day-contents">22</div></td><td class="day today event calendar-day-2013-11-23"><div class="day-contents">23</div></td></tr><tr><td class="day calendar-day-2013-11-24"><div class="day-contents">24</div></td><td class="day calendar-day-2013-11-25"><div class="day-contents">25</div></td><td class="day calendar-day-2013-11-26"><div class="day-contents">26</div></td><td class="day calendar-day-2013-11-27"><div class="day-contents">27</div></td><td class="day calendar-day-2013-11-28"><div class="day-contents">28</div></td><td class="day calendar-day-2013-11-29"><div class="day-contents">29</div></td><td class="day calendar-day-2013-11-30"><div class="day-contents">30</div></td></tr></tbody></table></div></div>
+								</div>
+						<!-- end calender  ---->
+			       </div>
+            	</div>
+               <div class="clearfix"> </div>
+            </div>
+			<!--pagenation strat here-->
+		    <div class="pag-nations">
+				<ul class="p_n-list">
+					<li><span class="list-bar next"> </span></li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a class="active" href="{% static '#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">7</a></li>
+					<li><a href="#">8</a></li>
+					<li><a href="#">10</a></li>
+					<li><span class="list-bar prev"> </span></li>
+					<div class="clearfix"> </div>
+				</ul>
+		    </div>
+<!--header-left colum3 start here--> 
+            <div class="selet-buttons">
+            	<div class="col-md-6 select-btn-left">
+            		<div class="switches-check">
+						 <div class="col-md-6 radio-btn">
+						 	<span class="radio-circle">
+							  <input type="radio" id="radio01" name="radio" />
+							  <label for="radio01"><i></i>Normal</label>
+							</span>
+							<span class="radio-circle">
+							  <input type="radio" id="radio02" name="radio" />
+							  <label for="radio02"><i></i>Hover</label>
+							</span>
+							<span class="radio-circle">
+							  <input type="radio" id="radio03" name="radio" checked=""/>
+							  <label for="radio03"><i></i>Click</label>
+							</span>
+						 </div>
+						 <div class="col-md-6 check-box">
+						 	 <p><span class="col_checkbox">
+							    <input id="0" class="css-checkbox0" type="checkbox" >
+							    <label for="0" name="demo_lbl_0" class="css-label0"><i class="chk-text">Normal</i></label>
+					         </span></p>
+						     <p><span class="col_checkbox">
+							    <input id="1" class="css-checkbox1" type="checkbox" >
+							    <label for="1" name="demo_lbl_1" class="css-label1"><i class="chk-text">Hover</i></label>
+					         </span></p>
+					         <p><span class="col_checkbox">
+								<input id="2" class="css-checkbox2" type="checkbox" checked="">
+								<label for="2" name="demo_lbl_2" class="css-label2"><i class="chk-text">Click</i> </label>
+						 	 </span></p>
+						 </div>
+					</div>
+						<div class="clearfix"> </div>
+						<div class="toggle-top">
+								<div class="tog-1">									
+								  	<div class="switch tog-2">
+										<input type="checkbox" checked="">
+										<label><i> </i></label>
+							      	</div>	
+							   </div>
+							   <div class="tog-2">									
+								  	<div class="switch tog-2 tog-3">
+										<input type="checkbox" >
+										<label><i> </i></label>
+							      	</div>	
+							   </div>
+						    <div class="clearfix"> </div>
+					 </div>
+						
+				</div>
+            	<div class="col-md-6 select-btn-rit">
+            		<div class="drop-down">
+						 <ul class="menu">
+							<li class="item1"><a href="#">Lorem ipsum dolor<i class="drop-dot"> </i> </a>
+								<ul class="cute">
+									<li class="subitem1"><a href="#">Inbox </a></li>
+									<li class="subitem2"><a href="#">Sent </a></li>
+									<li class="subitem3"><a href="#">Draft </a></li>
+									<li class="subitem3"><a href="#">Trash</a></li>
+								</ul>
+							</li>		
+							<li class="item2"><a href="{% static '#" class="">Lorem ipsum dolor<i class="drop-dot"> </i></a>
+								<ul class="cute" style="display: none;">
+									<li class="subitem1"><a href="#">Inbox </a></li>
+									<li class="subitem2"><a href="#">Sent </a></li>
+									<li class="subitem3"><a href="#">Draft </a></li>
+									<li class="subitem3"><a href="#">Trash</a></li>
+								</ul>
+							</li>
+						</ul>
+								<!--initiate accordion-->
+						<script type="text/javascript">
+							$(function() {
+							    var menu_ul = $('.menu > li > ul'),
+							           menu_a  = $('.menu > li > a');
+							    menu_ul.hide();
+							    menu_a.click(function(e) {
+							        e.preventDefault();
+							        if(!$(this).hasClass('active')) {
+							            menu_a.removeClass('active');
+							            menu_ul.filter(':visible').slideUp('normal');
+							            $(this).addClass('active').next().stop(true,true).slideDown('normal');
+							        } else {
+							            $(this).removeClass('active');
+							            $(this).next().stop(true,true).slideUp('normal');
+							        }
+							    });
+							
+							});
+						</script>
+					</div>
+            	</div>
+               <div class="clearfix"> </div>
+	     </div>
+	   </div>
+	</div>
+<!--header right start here-->
+	   <div class="col-md-7 header-right">
+	       <div class="header-right-blc1">
+			   <div class="col-md-6 joker-rows">
+				   <div class="mask-img">
+					  <div class="bridge-city">
+					 	<img src="{% static 'images/joker.png" alt="">
+					  </div>
+					  <div class="avari-info">
+					 	<h2>Lorem ipsum</h2>
+					 	<p>Libero tempore</p>
+					 	<p>cum soluta</p>
+					 	<p>impedit minus</p>
+					  </div>
+					  <div class="joker-block">
+					  	  <div class="col-md-4 views">
+					  	  	 <div class="joker-text">
+					  	  	 	<h4>2578</h4>
+					  	  	 	<p>Views</p>
+					  	  	 </div>
+					  	  	 <div class="joker-bg-img">
+	                               <span class="glyphicon glyphicon-eye-open joker-eye" aria-hidden="true"> </span>
+					  	  	 </div>
+					  	  	 <div class="clearfix"> </div>
+					  	  </div>
+					  	   <div class="col-md-4 views viewlines">
+					  	  	 <div class="joker-text">
+					  	  	 	<h4>879</h4>
+					  	  	 	<p>Friend</p>
+					  	  	 </div>
+					  	  	 <div class="joker-bg-img-user">
+					  	  	 	<span class="glyphicon glyphicon-user" aria-hidden="true"> </span>
+					  	  	 </div>
+					  	  	 <div class="clearfix"> </div>
+					  	  </div>
+					  	   <div class="col-md-4 views">
+					  	  	 <div class="joker-text">
+					  	  	 	<h4>72</h4>
+					  	  	 	<p>Comments</p>
+					  	  	 </div>
+					  	  	 <div class="joker-bg-img-comm">
+					  	  	 	<span class="glyphicon glyphicon-comment" aria-hidden="true"> </span>
+					  	  	 </div>
+					  	  	 <div class="clearfix"> </div>
+					  	  </div>
+					   </div>
+					  <div class="clearfix"> </div>
+				   </div>
+				   <div class="newsletter">
+					   <div class="newsletter-top">
+					   	  <form>
+					   	 	 <input type="text" placeholder="Name">
+					   	 	<input type="text" placeholder="Subject">
+					   	 	<textarea placeholder="Message" required=""></textarea>
+					   	 	<input type="submit" value="Send">
+					   	 </form>
+					   </div>
+					   <div class="newsletter-bottom">
+					   	 <div class="col-md-4 message">
+					   	 	 <div class="message-text">
+					   	 	 	<h4>Inbox</h4>
+					   	 	 </div>
+					   	 	 <div class="mess-img">
+					   	 	 	<span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span>
+					   	 	 </div>
+					   	   <div class="clearfix"> </div>
+					   	 </div>
+					   	 <div class="col-md-4 message">
+					   	 	 <div class="message-text">
+					   	 	 	<h4>Compose</h4>
+					   	 	 </div>
+					   	 	 <div class="pen-img">
+					   	 	 	<span class="glyphicon glyphicon-pencil" aria-hidden="true"> </span>
+					   	 	 </div>
+					   	   <div class="clearfix"> </div>
+					   	 </div>
+					   	 <div class="col-md-4 message">
+					   	 	 <div class="message-text">
+					   	 	 	<h4>Trash</h4>
+					   	 	 </div>
+					   	 	 <div class="del-img">
+					   	 	 	<span class="glyphicon glyphicon-trash" aria-hidden="true"> </span>
+					   	 	 </div>
+					   	   <div class="clearfix"> </div>
+					   	 </div>
+					   	 <div class="clearfix"> </div>
+					  </div>
+				  </div>
+				</div>
+				<div class="col-md-6 skills-rows">
+					<div class="skills-main">
+						<div class="skill-circle">
+					       <div class="pie-wrapper progress-75 style-2">
+							  <span class="label">87<i>%</i></span>
+							  <div class="pie">
+							    <div class="left-side half-circle"> </div>
+							    <div class="right-side half-circle"> </div>
+							  </div>
+							  <div class="shadow"> </div>						
+						  </div>
+						</div>
+						<div class="skills-bottom">
+							<div class="col-md-4 skills-grid">
+								<div class="skill-grd-text">
+									<h4>Chart</h4>
+								</div>
+								<div class="skill-grd-img-chat">
+									<span class="glyphicon glyphicon-signal" aria-hidden="true"> </span>
+								</div>
+							  <div class="clearfix"> </div>
+							</div>
+							<div class="col-md-4 skills-grid">
+								<div class="skill-grd-text">
+									<h4>Tasks</h4>
+								</div>
+								<div class="skill-grd-img-tesk">
+									<span class="glyphicon glyphicon-tasks" aria-hidden="true"> </span>
+								</div>
+							  <div class="clearfix"> </div>
+							</div>
+							<div class="col-md-4 skills-grid">
+								<div class="skill-grd-text">
+									<h4>Events</h4>
+								</div>
+								<div class="skill-grd-img-event">
+									<span class="glyphicon glyphicon-calendar" aria-hidden="true"> </span>
+								</div>
+							  <div class="clearfix"> </div>
+							</div>
+						  <div class="clearfix"> </div>
+						</div>
+					</div>
+					<div class="trav-respon-slid">
+						<div class="slider">
+						  <div class="callbacks_container">
+					      <ul class="rslides" id="slider">
+					        <li>
+					         <div class="slide-img"></div> 
+					        </li>
+					        <li>
+					          <div class="slide-img1"></div> 
+					        </li>
+					        <li>
+					         <div class="slide-img2"></div> 
+					        </li>
+					      </ul>
+					      </div>
+					    </div>
+				    </div>
+				  </div>
+				<div class="clearfix"> </div>
+		  </div>
+	   </div>
+	 <div class="clearfix"> </div>
+  </div>
+  <div class="copyright">
+			<p>© 2020 AptFarm. All rights reserved </p>
+	</div>
+</div>
+
+<!--header end here-->	
+</body>
+</html>
+
+{%  else %}
+
+
+{% load i18n %}
+{% load account socialaccount %}
+
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+
+{% block content %}
+
+<h1>{% trans "Sign In" %}</h1>
+
+{% get_providers as socialaccount_providers %}
+
+{% if socialaccount_providers %}
+<p>{% blocktrans with site.name as site_name %}Please sign in with one
+of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a>
+for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
+
+<div class="socialaccount_ballot">
+
+  <ul class="socialaccount_providers">
+    {% include "socialaccount/snippets/provider_list.html" with process="login" %}
+  </ul>
+
+  <div class="login-or">{% trans 'or' %}</div>
+
+</div>
+
+{% include "socialaccount/snippets/login_extra.html" %}
+
+{% else %}
+<p>{% blocktrans %}If you have not created an account yet, then please
+<a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+{% endif %}
+
+<form class="login" method="POST" action="{% url 'account_login' %}">
+  {% csrf_token %}
+  {{ form.as_p }}
+  {% if redirect_field_value %}
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+  {% endif %}
+  <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+  <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
+</form>
+
+{% endblock %}
+{% endif %}
