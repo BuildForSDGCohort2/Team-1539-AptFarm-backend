@@ -89,7 +89,7 @@ terminado==0.8.3
 testpath==0.4.4
 toml==0.10.1
 tornado==6.0.4
-traitlets==5.0.4
+
 twilio==6.45.4
 urllib3==1.25.10
 vine==5.0.0
