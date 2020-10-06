@@ -112,7 +112,7 @@ WSGI_APPLICATION = 'AptFarm.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgresql-animated-44517', 
+        
         'USER': 'dvbkqhrulrhhfl', 
         'PASSWORD': '544f20f16ef1eea69e0f2341cfc4da0422ddc6aa3e3ddbd98a200fb919bcc748',
         'HOST': 'ec2-50-16-198-4.compute-1.amazonaws.com', 
