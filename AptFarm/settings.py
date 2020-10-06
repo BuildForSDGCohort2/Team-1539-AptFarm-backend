@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     
     # 'django.contrib.sites',
     # 'registration', #should be immediately above 'django.contrib.admin'
+    'django.contrib.sites',
     'django.contrib.admin',
     'allauth',
     'allauth.account',
