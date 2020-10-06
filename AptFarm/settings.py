@@ -24,7 +24,7 @@ SECRET_KEY = '-=v=#o7*5+nkefs38fo8h8c2patu^1egys9pxm8f)7it#_x07y'
 DEBUG = True
 
 ALLOWED_HOSTS = ['aptfarm.herokuapp.com']
-
+SITE_ID =2
 
 # Application definition
 
