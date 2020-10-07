@@ -3,7 +3,9 @@ from django.http import HttpResponse
 from django.forms import Form
 from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
+from django.contrib.auth import login, authenticate
 import simplejson as json
+from django.template.context_processors import csrf
 
 import requests
 
@@ -53,7 +55,7 @@ def accounts(request):
     return render(request, 'profile/index.html')
 
 
-def profile(request):
+def profile(self,request):
     if request.user.is_authenticated:
         return render(request, 'profile/index.html')
     else:
