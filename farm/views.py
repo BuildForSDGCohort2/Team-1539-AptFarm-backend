@@ -3,6 +3,10 @@ from django.http import HttpResponse
 from django.forms import Form
 from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
+import simplejson as json
+
+import requests
+
 # Create your views here.
 
 
