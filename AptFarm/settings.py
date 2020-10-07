@@ -153,11 +153,11 @@ USE_TZ = True
 #gmail_send/settings.py
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'aptfarmsmtp@gmail.com'
+EMAIL_HOST_USER = DEFAULT_FROM_EMAIL= 'aptfarmsmtp@gmail.com'
 EMAIL_HOST_PASSWORD = 'gptnqffgjfjqdhvx' #past the key or password app here
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'info@aptfarm.com'
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
