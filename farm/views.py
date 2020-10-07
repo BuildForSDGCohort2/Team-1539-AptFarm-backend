@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.forms import Form
+from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
 # Create your views here.
 
@@ -49,9 +50,14 @@ def accounts(request):
 
 
 def profile(request):
+    if request.user.is_authenticated:
+        return render(request, 'profile/index.html')
+    else:
+        return render(request, 'account/login.html')
 
     # If a user is logged in, redirect them to a page informing them of such
-    return render(request, 'profile/index.html')
+
+    
 
   
 
