@@ -24,7 +24,7 @@ SECRET_KEY = '-=v=#o7*5+nkefs38fo8h8c2patu^1egys9pxm8f)7it#_x07y'
 DEBUG = True
 
 ALLOWED_HOSTS = ['aptfarm.herokuapp.com']
-SITE_ID =2
+
 
 # Application definition
 
@@ -204,7 +204,7 @@ SEND_ACTIVATION_EMAIL = True
 REGISTRATION_AUTO_LOGIN = False
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-SITE_ID = 1
+SITE_ID = 2
 
 # Provider specific settings
 
