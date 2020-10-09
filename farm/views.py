@@ -42,7 +42,10 @@ def index(request):
 
 
 def evaluate(request):
-    return render(request, 'evaluate.html')
+    if not request.user.is_authenticated:
+        return render(request, 'account/login.html')
+    else:
+        return render(request, 'evaluate.html')
 
 
 def project(request):
