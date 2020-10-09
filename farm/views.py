@@ -42,28 +42,14 @@ def index(request):
 
 
 def evaluate(request):
-    if request.user.is_authenticated:
-        return render(request, 'evaluate.html')
-    else:
-        return render(request, 'account/login.html')
-
-    
+    return render(request, 'evaluate.html')
 
 
 def project(request):
     return render(request, 'project.html')
 
 def reminder(request):
-    username = request.POST['username']
-    password = request.POST['password']
-    user = authenticate(request, username=username, password=password)
-    if user is not None:
-        login(request, user)
-        return render(request, 'reminder.html')
-        
-    else:
-        return render(request, 'account/login.html')
-        
+    return render(request, 'reminder.html')
 
 def accounts(request):
     return render(request, 'profile/index.html')

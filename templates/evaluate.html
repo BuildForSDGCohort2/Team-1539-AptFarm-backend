@@ -2,8 +2,13 @@
 
 
 {% block content %}
+{% if user.is_authenticated %}
 
+welcome {% user.username %}
 
+{%  else %}
+
+welcome guest
 
     
 {% endblock content %}
