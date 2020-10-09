@@ -42,7 +42,7 @@ def index(request):
 
 
 def evaluate(request):
-    if request.user.is_authenticated():
+    if request.user.is_authenticated:
         return render(request, 'evaluate.html')
     else:
         return render(request, 'account/login.html')
@@ -50,7 +50,7 @@ def evaluate(request):
 
 
 def project(request):
-    if request.user.is_authenticated():
+    if request.user.is_authenticated:
         return render(request, 'project.html')
     else:
         return render(request, 'account/login.html')
@@ -59,7 +59,7 @@ def project(request):
 
 def reminder(request):
     
-    if request.user.is_authenticated():
+    if request.user.is_authenticated:
         return render(request, 'reminder.html')
     else:
         return render(request, 'account/login.html')
@@ -71,7 +71,7 @@ def reminder(request):
 def accounts(request):
     
     
-    if request.user.is_authenticated():
+    if request.user.is_authenticated:
         return render(request, 'profile/index.html')
     else:
         return render(request, 'account/login.html')
@@ -83,7 +83,7 @@ def accounts(request):
 
 def profile(request):
     
-    if request.user.is_authenticated():
+    if request.user.is_authenticated:
         return render(request, 'profile/index.html')
     else:
         return render(request, 'account/login.html')
