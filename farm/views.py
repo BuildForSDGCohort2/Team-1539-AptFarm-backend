@@ -79,9 +79,9 @@ def accounts(request):
 
 def profile(request):
     if not request.user.is_authenticated:
-        return render(request, 'account/login.html')
-    else:
         return render(request, 'profile/index.html')
+    else:
+        return render(request, 'account/login.html')
     
     # If a user is logged in, redirect them to a page informing them of such
 
