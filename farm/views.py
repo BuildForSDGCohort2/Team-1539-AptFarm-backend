@@ -49,21 +49,40 @@ def evaluate(request):
 
 
 def project(request):
-    return render(request, 'project.html')
+    if not request.user.is_authenticated:
+        return render(request, 'account/login.html')
+    else:
+        return render(request, 'project.html')
+    
 
 def reminder(request):
-    return render(request, 'reminder.html')
+    
+    if not request.user.is_authenticated:
+        return render(request, 'account/login.html')
+    else:
+        return render(request, 'reminder.html')
+    
+
+   
 
 def accounts(request):
-    return render(request, 'profile/index.html')
-
-
-def profile(self,request):
-    if request.user.is_authenticated:
-        return render(request, 'profile/index.html')
-    else:
+    
+    
+    if not request.user.is_authenticated:
         return render(request, 'account/login.html')
+    else:
+        return render(request, 'profile/index.html')
+    
 
+    
+
+
+def profile(request):
+    if not request.user.is_authenticated:
+        return render(request, 'account/login.html')
+    else:
+        return render(request, 'profile/index.html')
+    
     # If a user is logged in, redirect them to a page informing them of such
 
     
