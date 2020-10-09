@@ -42,14 +42,22 @@ def index(request):
 
 
 def evaluate(request):
-    return render(request, 'evaluate.html')
+    if request.user.is_authenticated:
+        return render(request, 'evaluate.html')
+    else:
+        return render(request, 'account/login.html')
+
+    
 
 
 def project(request):
     return render(request, 'project.html')
 
 def reminder(request):
-    return render(request, 'reminder.html')
+    if request.user.is_authenticated:
+        return render(request, 'reminder.html')
+    else:
+        return render(request, 'account/login.html')
 
 def accounts(request):
     return render(request, 'profile/index.html')
