@@ -42,27 +42,21 @@ def index(request):
 
 
 def evaluate(request):
-    if request.user.is_authenticated:
-        return render(request, 'evaluate.html')
-    else:
-        return render(request, 'account/login.html')
+    
+    return render(request, 'evaluate.html')
+
         
 
 
 def project(request):
-    if request.user.is_authenticated:
-        return render(request, 'project.html')
-    else:
-        return render(request, 'account/login.html')
+    return render(request, 'project.html')
+  
         
     
 
 def reminder(request):
     
-    if request.user.is_authenticated:
-        return render(request, 'reminder.html')
-    else:
-        return render(request, 'account/login.html')
+   return render(request, 'reminder.html')
         
     
 
@@ -71,10 +65,7 @@ def reminder(request):
 def accounts(request):
     
     
-    if request.user.is_authenticated:
-        return render(request, 'profile/index.html')
-    else:
-        return render(request, 'account/login.html')
+    return render(request, 'profile/index.html')
         
     
 
@@ -82,11 +73,8 @@ def accounts(request):
 
 
 def profile(request):
-    
-    if request.user.is_authenticated:
-        return render(request, 'profile/index.html')
-    else:
-        return render(request, 'account/login.html')
+   return render(request, 'profile/index.html')
+
        
     # If a user is logged in, redirect them to a page informing them of such
 

@@ -39,7 +39,18 @@
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'reminder' %}"><i class="fas fa-mail-bulk    "></i> Reminder </a>
               </li>
-            
+              {% if requst.user.is_authenticated %}
+              <li class="nav-item">
+                <span><h3>
+                Welcome {% request.user.username %}  <a href=" {% url 'accounts/logout'  %} "> logout</a>
+                </h3></span>
+              </li>
+             {% else %}
+             <li class="nav-item">
+              <span><h3>
+                Welcome <span>Gust</span> <a href=" {% url 'accounts/login %}  "> login</a>
+                </h3></span>
+            </li>
           </ul>
           
         </div>
