@@ -54,10 +54,16 @@ def project(request):
     return render(request, 'project.html')
 
 def reminder(request):
-    if request.user.is_authenticated:
+    username = request.POST['username']
+    password = request.POST['password']
+    user = authenticate(request, username=username, password=password)
+    if user is not None:
+        login(request, user)
         return render(request, 'reminder.html')
+        
     else:
         return render(request, 'account/login.html')
+        
 
 def accounts(request):
     return render(request, 'profile/index.html')
